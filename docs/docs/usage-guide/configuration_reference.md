@@ -30,8 +30,8 @@ See [Configuration options](../usage-guide/configuration_options.md#global-confi
 
 | Key | Default | Description |
 | --- | --- | --- |
-| `model` | "gpt-6.1-sol" |  |
-| `fallback_models` | ["gpt-6-luna"] |  |
+| `model` | "openrouter/anthropic/claude-sonnet-5" | Fork default: OpenRouter (key in .secrets.toml [openrouter] or the OPENROUTER__KEY env var). |
+| `fallback_models` | ["openrouter/deepseek/deepseek-chat"] |  |
 **CLI**
 
 | Key | Default | Description |

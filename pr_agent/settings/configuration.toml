@@ -6,8 +6,9 @@
 max_webhook_request_body_bytes = 5242880 # maximum request body accepted by webhook servers (5 MiB)
 bot_display_name="PR-Agent" # product name shown in user-visible PR comments; host-only, repo settings and comment args cannot set it
 # models
-model="gpt-6.1-sol"
-fallback_models=["gpt-6-luna"]
+# Fork default: OpenRouter (key in .secrets.toml [openrouter] or the OPENROUTER__KEY env var).
+model="openrouter/anthropic/claude-sonnet-5"
+fallback_models=["openrouter/deepseek/deepseek-chat"]
 #model_reasoning="gpt-6.1-sol" # unused: it served /improve's self-reflection, and /improve now runs /review
 # Leave model_weak unset with the shipped fallbacks: Luna would retry Luna, not a distinct model.
 #model_weak="gpt-6-luna" # optional, a weaker model to use for some easier tasks
